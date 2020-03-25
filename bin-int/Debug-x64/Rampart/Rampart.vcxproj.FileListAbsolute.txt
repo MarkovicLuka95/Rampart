@@ -1,0 +1,2 @@
+C:\Users\Luka\source\repos\Rampart\bin\Debug-x64\Rampart\Rampart.pdb
+C:\Users\Luka\source\repos\Rampart\bin-int\Debug-x64\Rampart\Rampart.pdb
