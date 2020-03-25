@@ -1,0 +1,3 @@
+[submodule "Rampart/vendor/spdlog"]
+	path = Rampart/vendor/spdlog
+	url = https://github.com/gabime/spdlog
