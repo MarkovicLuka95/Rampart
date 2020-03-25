@@ -3,5 +3,5 @@
 
 namespace Rampart
 {
-	__declspec(dllexport) void Print();
+	void Print();
 }
