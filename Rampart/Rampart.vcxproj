@@ -82,7 +82,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Object.cpp" />
+    <ClCompile Include="src\Physics.cpp" />
     <ClCompile Include="src\Test.cpp" />
+    <ClCompile Include="src\Utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Object.h" />
