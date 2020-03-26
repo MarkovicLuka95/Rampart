@@ -1,5 +1,9 @@
 #pragma once
 
+#ifndef __UTILITIES_H__
+#define __UTILITIES_H__
+
+
 struct Vector3 {
 
 	Vector3(double x, double y, double z) 
@@ -30,3 +34,7 @@ struct Vector3 {
 	friend Vector3 operator-(Vector3 lhs, Vector3 const& rhs);
 	Vector3& operator+=(Vector3 const& rhs);
 };
+
+
+
+#endif // !__UTILITIES_H__

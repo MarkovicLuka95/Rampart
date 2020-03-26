@@ -1,11 +1,11 @@
 #include "Force.h"
-#include <math>
+#include <math.h>
 
 #define FORCE_CONST -1000
 
 Force::Force(Vector3 firstValue, double k, double duration)
 {
-	this->firstValue = firstValue;
+	this->Value = firstValue;
 	this->k = k;
 	this->duration = duration;
 }

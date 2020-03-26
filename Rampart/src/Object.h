@@ -1,4 +1,8 @@
 #pragma once
+#ifndef __OBJECT_H__
+#define __OBJECT_H__
+
+
 
 #include "Utilities.h"
 #include "Physics.h"
@@ -27,6 +31,6 @@ private:
 	Physics physicsManager = Physics();
 };
 
-
+#endif //__OBJECT_H__
 
 
