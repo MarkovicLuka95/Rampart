@@ -2,7 +2,9 @@
 #include "Object.h"
 
 #include "spdlog/spdlog.h"
-
+#include <Windows.h>
+#include <mmsystem.h>
+#include <iostream>
 int main()
 {
 	spdlog::info("Welcome to spdlog!");
@@ -15,4 +17,7 @@ int main()
 	Object O = Object();
 	spdlog::critical("Colision status: {}", O.getColisionStatus());
 
+
+	int a;
+	std::cin >> a;
 }

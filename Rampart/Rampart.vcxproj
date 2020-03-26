@@ -81,10 +81,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Sound.cpp" />
     <ClCompile Include="src\Object.cpp" />
     <ClCompile Include="src\Test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Sound.h" />
     <ClInclude Include="src\Object.h" />
     <ClInclude Include="src\Test.h" />
     <ClInclude Include="src\Utilities.h" />

@@ -1,6 +1,8 @@
 #pragma once
 
 #include "Utilities.h"
+#include "Sound.h"
+#include <vector>
 
 class Object
 {
@@ -19,7 +21,12 @@ public:
 		return colision;
 	}
 
+	void addSound(Sound* sound) {
+		sounds.push_back(sound);
+	}
+
 private:
+	std::vector<Sound*> sounds;
 	bool colision = false;
 	double mass=0;
 	Vector3 speed = Vector3(0, 0, 0);
