@@ -9,3 +9,11 @@ Object::Object(double x, double y, double z) {
 Object::~Object() {
 
 }
+
+void Object::playSound()
+{
+	for (auto s : sounds) 
+	{
+		s->playSound();
+	}
+}

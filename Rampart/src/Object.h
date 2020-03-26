@@ -13,19 +13,24 @@ public:
 
 
 
-	void setColision(bool value) {
+	void setColision(bool value)
+	{
 		colision = value;
 	}
 
-	bool getColisionStatus() {
+	bool getColisionStatus()
+	{
 		return colision;
 	}
 
-	void addSound(Sound* sound) {
+	void addSound(Sound* sound)
+	{
 		sounds.push_back(sound);
+		playSound();
 	}
 
 private:
+	void playSound();
 	std::vector<Sound*> sounds;
 	bool colision = false;
 	double mass=0;
