@@ -1,4 +1,6 @@
 #include "Test.h"
+#include "Object.h"
+
 #include "spdlog/spdlog.h"
 
 int main()
@@ -10,4 +12,7 @@ int main()
 	spdlog::set_level(spdlog::level::debug);
 	spdlog::debug("This message should be displayed..");
 	Rampart::Print();
+	Object O = Object();
+	spdlog::critical("Colision status: {}", O.getColisionStatus());
+
 }
