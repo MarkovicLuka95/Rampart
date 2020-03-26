@@ -2,6 +2,7 @@
 #include "Object.h"
 
 #include "spdlog/spdlog.h"
+#include <iostream>
 
 int main()
 {
@@ -14,5 +15,8 @@ int main()
 	Rampart::Print();
 	Object O = Object();
 	spdlog::critical("Colision status: {}", O.getColisionStatus());
+	
+	
 
+	
 }
