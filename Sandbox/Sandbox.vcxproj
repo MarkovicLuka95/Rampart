@@ -73,6 +73,8 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)bin\$(Platform)-$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin-int\$(Platform)-$(Configuration)\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath);$(SolutionDir)Rampart\vendor\library;$(SolutionDir)Rampart\vendor\library\SDL</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -88,6 +90,8 @@
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\$(Platform)-$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin-int\$(Platform)-$(Configuration)\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath);$(SolutionDir)Rampart\vendor\library;$(SolutionDir)Rampart\vendor\library\SDL</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -95,12 +99,20 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+<<<<<<< Updated upstream
       <AdditionalIncludeDirectories>$(SolutionDir)Rampart\src;$(SolutionDir)Rampart\vendor\spdlog\include;$(SolutionDir)Rampart\vendor\irrKlang-64bit-1.6.0;</AdditionalIncludeDirectories>
+=======
+      <AdditionalIncludeDirectories>$(SolutionDir)Rampart\src;$(SolutionDir)Rampart\vendor\includes</AdditionalIncludeDirectories>
+>>>>>>> Stashed changes
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+<<<<<<< Updated upstream
       <AdditionalDependencies>$(SolutionDir)Rampart\vendor\irrKlang-64bit-1.6.0\lib\Winx64-visualStudio\irrKlang.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+=======
+      <AdditionalDependencies>bullet\BulletCollision_Debug.lib;bullet\BulletDynamics_Debug.lib;bullet\LinearMath_Debug.lib;opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+>>>>>>> Stashed changes
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -141,14 +153,22 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+<<<<<<< Updated upstream
       <AdditionalIncludeDirectories>$(SolutionDir)Rampart\src;$(SolutionDir)Rampart\vendor\spdlog\include;$(SolutionDir)Rampart\vendor\irrKlang-64bit-1.6.0;</AdditionalIncludeDirectories>
+=======
+      <AdditionalIncludeDirectories>$(SolutionDir)Rampart\src;$(SolutionDir)Rampart\vendor\includes</AdditionalIncludeDirectories>
+>>>>>>> Stashed changes
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+<<<<<<< Updated upstream
       <AdditionalDependencies>$(SolutionDir)Rampart\vendor\irrKlang-64bit-1.6.0\lib\Winx64-visualStudio\irrKlang.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+=======
+      <AdditionalDependencies>bullet\BulletCollision_Debug.lib;bullet\BulletDynamics_Debug.lib;bullet\LinearMath_Debug.lib;opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+>>>>>>> Stashed changes
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

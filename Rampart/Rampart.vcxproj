@@ -84,12 +84,18 @@
     <ClCompile Include="src\Sound.cpp" />
     <ClCompile Include="src\Object.cpp" />
     <ClCompile Include="src\Test.cpp" />
+<<<<<<< Updated upstream
+=======
+    <ClCompile Include="src\Utilities.cpp" />
+    <ClCompile Include="src\vector3d.cpp" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Sound.h" />
     <ClInclude Include="src\Object.h" />
     <ClInclude Include="src\Test.h" />
     <ClInclude Include="src\Utilities.h" />
+    <ClInclude Include="src\vector3d.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
