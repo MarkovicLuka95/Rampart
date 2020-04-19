@@ -21,10 +21,14 @@
     <ClCompile Include="src\Object.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Sound.cpp">
+
+    <ClCompile Include="src\Utilities.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\vector3d.cpp">
+    <ClCompile Include="src\Physics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Force.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,10 +42,11 @@
     <ClInclude Include="src\Utilities.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Sound.h">
+    <ClInclude Include="src\Force.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\vector3d.h">
+    <ClInclude Include="src\Physics.h">
+
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
