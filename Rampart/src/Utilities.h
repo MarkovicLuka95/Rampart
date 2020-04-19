@@ -1,10 +1,12 @@
 #pragma once
 
+
 #ifndef __UTILITIES_H__
 #define __UTILITIES_H__
 
 
 struct Vector3 {
+
 
 	Vector3(double x, double y, double z) 
 	{
