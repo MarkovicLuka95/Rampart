@@ -1,30 +1,27 @@
 #pragma once
-#ifndef __OBJECT_H__
-#define __OBJECT_H__
-
-
 
 #include "Utilities.h"
-
-#include "Physics.h"
-
+#include "Sound.h"
+#include <vector>
 
 class Object
 {
 public:
-	Object(double x = 0, double y = 0, double z = 0);
+	Object(double x=0, double y=0, double z=0);
 	~Object();
 
 
 
-	inline void setCollisionStatus(bool value) { collision = value; }
-	inline bool getCollisionStatus() { return collision; }
-	
 
+	void setColision(bool value)
+	{
+		colision = value;
+	}
 
-	Vector3 getForceTotal(double deltaT) { return physicsManager.getForceTotal(deltaT); }
-	void addForce(Force* force) { physicsManager.addForce(force); }
-
+	bool getColisionStatus()
+	{
+		return colision;
+	}
 
 	void addSound(Sound* sound)
 	{
@@ -33,16 +30,15 @@ public:
 	}
 
 private:
-
-	bool collision = false;
-	double mass = 0;
-	Vector3 speed = Vector3();
-	Vector3 rotation = Vector3();
-	Vector3 position = Vector3();
-	Physics physicsManager = Physics();
-
+	void playSound();
+	std::vector<Sound*> sounds;
+	bool colision = false;
+	double mass=0;
+	Vector3 speed = Vector3(0, 0, 0);
+	Vector3 rotation = Vector3(0, 0, 0);
+	Vector3 position = Vector3(0, 0, 0);
 };
 
-#endif //__OBJECT_H__
+
 
 

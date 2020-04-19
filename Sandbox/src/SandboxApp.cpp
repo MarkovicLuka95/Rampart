@@ -28,14 +28,16 @@ int main()
 	spdlog::set_level(spdlog::level::debug);
 	spdlog::debug("This message should be displayed..");
 	Rampart::Print();
-
+<<<<<<< Updated upstream
 	Object O = Object();
+	spdlog::critical("Colision status: {}", O.getColisionStatus());
+	
+	
 
+	
+=======
 
-
-
-
-	GLFWwindow * window;
+	GLFWwindow* window;
 	if (!glfwInit())
 		return -1;
 
@@ -55,5 +57,5 @@ int main()
 
 
 	return 0;
-
+>>>>>>> Stashed changes
 }
