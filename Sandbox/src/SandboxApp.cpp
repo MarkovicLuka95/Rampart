@@ -43,6 +43,7 @@ int main()
 	if (!window) {
 		glfwTerminate();
 		return -1;
+
 	}
 	btAlignedObjectArray <btCollisionShape*> mCollisionShapes;
 	btBroadphaseInterface* mBroadphase;
