@@ -2,9 +2,25 @@
 #include "Object.h"
 
 #include "spdlog/spdlog.h"
+#include <iostream>
+
+#include <iostream>
+//#include <SDL.h>
+#include <vector>
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+#include <Bullet/src/btBulletDynamicsCommon.h>
+#include <vector>
+
+
+using namespace std;
+
+
+#define SCALING .5
 
 int main()
 {
+
 	spdlog::info("Welcome to spdlog!");
 	spdlog::error("Some error message with arg: {}", 1);
 	spdlog::critical("Support for int: {0:d};  hex: {0:x};  oct: {0:o}; bin: {0:b}", 42);
@@ -13,30 +29,30 @@ int main()
 	spdlog::debug("This message should be displayed..");
 	Rampart::Print();
 
-
-	//Deluje samo po x osi
-	Vector3 v1 = Vector3(10, 0, 0);
-	Vector3 v2 = Vector3(1, 0, 0);
-
-	//Konstantna sila, jer je treci argument == -1000, a drugi argument je u ovom slucaju nebitan
-	Force F1 = Force(v1, 0, -1000);
-	//Sila koja ima pocetnu vrednost 1, raste za 1 svake sekunde i traje 10 sekundi
-	Force F2 = Force(v2, 1, 10);
-
-
 	Object O = Object();
-	O.addForce(&F1);
-	O.addForce(&F2);
 
-	//deltaT = 25ms
-	double deltaT = 0.025;
 
-	for (double i = 0; i < 20; i += deltaT)
-	{
-		Vector3 temp = O.getForceTotal(deltaT);
-		spdlog::info("Force x, y, z: {0}, {1}, {2}", temp.x, temp.y, temp.z);
+
+
+
+	GLFWwindow * window;
+	if (!glfwInit())
+		return -1;
+
+	window = glfwCreateWindow(640, 480, "hello world", NULL, NULL);
+	if (!window) {
+		glfwTerminate();
+		return -1;
 	}
+	btAlignedObjectArray <btCollisionShape*> mCollisionShapes;
+	btBroadphaseInterface* mBroadphase;
+	btCollisionDispatcher* mDispatcher;
+	btConstraintSolver* mSolver;
+	btDefaultCollisionConfiguration* mCollisionConfiguration;
+	btDynamicsWorld* mDynamicsWorld;
+	vector<btRigidBody*> mBoxesRB;
+	double mLastElapsedSeconds;
 
 
-
+	return 0;
 }
